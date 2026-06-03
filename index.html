@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schulte Verpackungs-Systeme GmbH | Die Packmittel-Profis</title>
-    <meta name="description" content="Schulte Verpackungs-Systeme GmbH – Ihr Spezialist für Paletten, Kisten, Schwergutverpackungen und maßgeschneiderte Packmittelkonzepte seit über 100 Jahren.">
-    <meta name="keywords" content="Packmittel, Verpackung, Paletten, Kisten, Schwergutverpackungen, Schulte, Verpackungssysteme, Kipliboxen, Hemer">
+    <title>Schulte Verpackungs-Systeme GmbH | Maßgeschneiderte Industrieverpackungen</title>
+    <meta name="description" content="Maßgeschneiderte Industrieverpackungen aus Holz seit über 100 Jahren. Kisten, Paletten, Schwergutverpackung, Logistik & Export aus einer Hand.">
+    <meta name="keywords" content="Industrieverpackungen, Holzpackmittel, Schwergutverpackung, Paletten, Kisten, Exportverpackung, Logistik, IPPC, ISPM 15">
     <meta name="author" content="Schulte Verpackungs-Systeme GmbH">
     <meta property="og:title" content="Schulte Verpackungs-Systeme GmbH | Die Packmittel-Profis">
-    <meta property="og:description" content="Ihr Spezialist für Paletten, Kisten, Schwergutverpackungen und maßgeschneiderte Packmittelkonzepte seit über 100 Jahren.">
+    <meta property="og:description" content="Maßgeschneiderte Industrieverpackungen aus Holz – sicher, schnell, nachhaltig.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.packmittel-profis.de">
     <link rel="canonical" href="https://www.packmittel-profis.de">
@@ -22,12 +22,27 @@
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
 
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container cookie-inner">
+            <div class="cookie-text">
+                <p><strong>Datenschutzeinstellungen</strong></p>
+                <p>Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Sie können entscheiden, welche Kategorien Sie zulassen möchten.</p>
+            </div>
+            <div class="cookie-actions">
+                <button class="btn btn-outline btn-small" id="cookieDecline">Ablehnen</button>
+                <button class="btn btn-small" id="cookieSettings" style="background:var(--text-muted);color:white;">Einstellungen</button>
+                <button class="btn btn-primary btn-small" id="cookieAccept">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-left">
-                <span class="eco-badge">🌿 CO₂-neutrales Unternehmen</span>
-                <span class="jubilee-badge">🏆 100-jähriges Firmenjubiläum</span>
+                <span class="eco-badge"><span aria-hidden="true">🌿</span> Nachhaltige Holzpackmittel & Recycling</span>
+                <span class="jubilee-badge"><span aria-hidden="true">🏆</span> Seit über 100 Jahren Erfahrung</span>
             </div>
             <div class="top-bar-right">
                 <a href="tel:+492372949417" class="top-link">
@@ -45,7 +60,7 @@
     <!-- Header -->
     <header class="site-header" id="header">
         <div class="container header-inner">
-            <a href="/" class="logo" aria-label="Schulte Verpackungs-Systeme - Startseite">
+            <a href="index.html" class="logo" aria-label="Schulte Verpackungs-Systeme - Startseite">
                 <div class="logo-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="8" fill="#2d6a4f"/>
@@ -67,12 +82,14 @@
                     <span class="hamburger-line"></span>
                 </button>
                 <ul class="nav-menu" id="navMenu" role="menubar">
-                    <li role="none"><a href="#start" class="nav-link active" role="menuitem">Startseite</a></li>
-                    <li role="none"><a href="#leistungen" class="nav-link" role="menuitem">Leistungen</a></li>
-                    <li role="none"><a href="#produkte" class="nav-link" role="menuitem">Produkte</a></li>
-                    <li role="none"><a href="#branchen" class="nav-link" role="menuitem">Branchen</a></li>
-                    <li role="none"><a href="#unternehmen" class="nav-link" role="menuitem">Unternehmen</a></li>
-                    <li role="none"><a href="#kontakt" class="nav-link nav-cta" role="menuitem">Kontakt</a></li>
+                    <li role="none"><a href="index.html" class="nav-link active" role="menuitem">Startseite</a></li>
+                    <li role="none"><a href="leistungen.html" class="nav-link" role="menuitem">Leistungen</a></li>
+                    <li role="none"><a href="produkte.html" class="nav-link" role="menuitem">Produkte</a></li>
+                    <li role="none"><a href="branchen.html" class="nav-link" role="menuitem">Branchen</a></li>
+                    <li role="none"><a href="qualitaet-export.html" class="nav-link" role="menuitem">Qualität &amp; Export</a></li>
+                    <li role="none"><a href="nachhaltigkeit.html" class="nav-link" role="menuitem">Nachhaltigkeit</a></li>
+                    <li role="none"><a href="karriere.html" class="nav-link" role="menuitem">Karriere</a></li>
+                    <li role="none"><a href="kontakt.html" class="nav-link nav-cta" role="menuitem">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -89,129 +106,154 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-badge" data-animate>
-                        <span class="badge-icon">🏆</span>
+                        <span class="badge-icon" aria-hidden="true">🏆</span>
                         <span>Seit 1924 – Über 100 Jahre Erfahrung</span>
                     </div>
                     <h1 class="hero-title" data-animate>
-                        Die Packmittel-<br>
-                        <span class="text-gradient">Profis.</span>
+                        Maßgeschneiderte<br>Industrieverpackungen.<br>
+                        <span class="text-gradient">Sicher. Schnell. Nachhaltig.</span>
                     </h1>
                     <p class="hero-subtitle" data-animate>
-                        Paletten, Kisten oder Schwergutverpackungen – für unterschiedlichste 
-                        Ansprüche in zahlreichen Branchen. Maßgeschneiderte Packmittelkonzepte 
-                        statt einfachem Verpacken.
+                        Von der technischen Verpackungsberatung über Kisten, Paletten und Schwergutverpackungen 
+                        bis hin zu Logistik, Containerstau und Exportlösungen.
                     </p>
                     <div class="hero-buttons" data-animate>
-                        <a href="#produkte" class="btn btn-primary">
-                            Unsere Produkte
+                        <a href="kontakt.html" class="btn btn-primary">
+                            Projekt anfragen
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
-                        <a href="#kontakt" class="btn btn-outline">Anfrage stellen</a>
+                        <a href="leistungen.html" class="btn btn-outline">Leistungen entdecken</a>
+                        <a href="karriere.html" class="btn btn-outline" style="border-color:var(--accent);color:var(--accent);">Karriere starten</a>
                     </div>
                 </div>
                 <div class="hero-visual" data-animate>
                     <div class="hero-card hero-card-main">
                         <div class="card-content">
-                            <span class="card-label">Hauptprodukt</span>
-                            <h3>Individuelle Paletten</h3>
-                            <p>Optimal auf Ihre Bedürfnisse abgestimmt</p>
+                            <span class="card-label">Industrieverpackungen aus Holz</span>
+                            <h3>Maßgefertigt für Ihre Branche</h3>
+                            <p>Kisten, Paletten, Schwergut &amp; mehr</p>
                         </div>
                     </div>
                     <div class="hero-card hero-card-secondary">
                         <div class="card-content">
-                            <span class="card-label">Nachhaltigkeit</span>
-                            <h3>CO₂-neutral</h3>
-                            <p>Umweltfreundliche Verpackungslösungen</p>
+                            <span class="card-label">Export/IPPC-kompetent</span>
+                            <h3>Weltweit versandfertig</h3>
+                            <p>ISPM 15 zertifiziert &amp; dokumentiert</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="hero-scroll">
-                <a href="#stats" aria-label="Nach unten scrollen">
+                <a href="#trust" aria-label="Nach unten scrollen">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
                 </a>
             </div>
         </section>
 
-        <!-- Stats Bar -->
-        <section class="stats-section" id="stats" aria-label="Unternehmenskennzahlen">
+        <!-- Trust Bar -->
+        <section class="trust-section" id="trust" aria-label="Vertrauenselemente">
             <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item" data-animate>
-                        <div class="stat-icon">📅</div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-count="100">0</span>
-                            <span class="stat-suffix">+</span>
-                            <span class="stat-label">Jahre Erfahrung</span>
-                        </div>
+                <div class="trust-grid">
+                    <div class="trust-item" data-animate>
+                        <span class="trust-icon" aria-hidden="true">📅</span>
+                        <span class="trust-text">Seit über 100 Jahren Erfahrung</span>
                     </div>
-                    <div class="stat-item" data-animate>
-                        <div class="stat-icon">🌿</div>
-                        <div class="stat-content">
-                            <span class="stat-text">CO₂</span>
-                            <span class="stat-label">Neutral produziert</span>
-                        </div>
+                    <div class="trust-item" data-animate>
+                        <span class="trust-icon" aria-hidden="true">🪵</span>
+                        <span class="trust-text">Industrieverpackungen aus Holz</span>
                     </div>
-                    <div class="stat-item" data-animate>
-                        <div class="stat-icon">🏭</div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-count="8">0</span>
-                            <span class="stat-label">Branchen bedient</span>
-                        </div>
+                    <div class="trust-item" data-animate>
+                        <span class="trust-icon" aria-hidden="true">⚡</span>
+                        <span class="trust-text">Schnelle Lieferzeiten</span>
                     </div>
-                    <div class="stat-item" data-animate>
-                        <div class="stat-icon">♻️</div>
-                        <div class="stat-content">
-                            <span class="stat-number" data-count="100">0</span>
-                            <span class="stat-suffix">+</span>
-                            <span class="stat-label">Umläufe bei Kipliboxen</span>
-                        </div>
+                    <div class="trust-item" data-animate>
+                        <span class="trust-icon" aria-hidden="true">🌍</span>
+                        <span class="trust-text">Export / IPPC-kompetent</span>
+                    </div>
+                    <div class="trust-item" data-animate>
+                        <span class="trust-icon" aria-hidden="true">📦</span>
+                        <span class="trust-text">Logistik &amp; Verpackung aus einer Hand</span>
+                    </div>
+                    <div class="trust-item" data-animate>
+                        <span class="trust-icon" aria-hidden="true">♻️</span>
+                        <span class="trust-text">Nachhaltige Holzpackmittel &amp; Recycling</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Leistungen -->
+        <!-- Leistungen auf einen Blick -->
         <section class="section section-light" id="leistungen" aria-labelledby="leistungen-heading">
             <div class="container">
                 <header class="section-header">
                     <span class="section-tag">Unser Service</span>
-                    <h2 id="leistungen-heading" class="section-title">Leistungen & Service</h2>
-                    <p class="section-desc">Als Verpackungsspezialist bieten wir Ihnen das „Rundum-Sorglos-Paket": Vom Verpacken über den Containerstau bis hin zur Endkundenbelieferung.</p>
+                    <h2 id="leistungen-heading" class="section-title">Leistungen auf einen Blick</h2>
+                    <p class="section-desc">Als Verpackungsspezialist bieten wir Ihnen das komplette Rundum-Sorglos-Paket – von der ersten Beratung bis zur Auslieferung.</p>
                 </header>
-                <div class="services-grid">
+                <div class="services-grid services-grid-12">
                     <article class="service-card" data-animate>
-                        <div class="service-icon-wrapper">
-                            <span class="service-icon" aria-hidden="true">📐</span>
-                        </div>
-                        <h3>Individuelle Verpackungslösungen</h3>
-                        <p>Maßgeschneiderte Packmittelkonzepte, die perfekt auf Ihre Produkte und Logistikkette abgestimmt sind. Nicht das einfache Verpacken, sondern ausgefeilte Konzepte.</p>
-                        <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">📐</span></div>
+                        <h3>Verpackungsberatung</h3>
+                        <p>Technische Beratung vor Ort oder remote – wir analysieren Ihr Packgut und empfehlen die optimale Lösung.</p>
                     </article>
                     <article class="service-card" data-animate>
-                        <div class="service-icon-wrapper">
-                            <span class="service-icon" aria-hidden="true">🚢</span>
-                        </div>
-                        <h3>Containerstau & Logistik</h3>
-                        <p>Professioneller Containerstau und Organisation des kompletten Transportwegs bis zum Endkunden. Effizient und sicher.</p>
-                        <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">📋</span></div>
+                        <h3>Packmittelkonzeption</h3>
+                        <p>Maßgeschneiderte Konzepte für Ihre gesamte Logistikkette – effizient, sicher und kostengünstig.</p>
                     </article>
                     <article class="service-card" data-animate>
-                        <div class="service-icon-wrapper">
-                            <span class="service-icon" aria-hidden="true">🌱</span>
-                        </div>
-                        <h3>Nachhaltige Verpackung</h3>
-                        <p>Als CO₂-neutrales Unternehmen setzen wir auf umweltfreundliche Materialien und nachhaltige Prozesse für eine grüne Zukunft.</p>
-                        <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">🔨</span></div>
+                        <h3>Fertigung von Kisten und Paletten</h3>
+                        <p>Präzise Fertigung nach Ihren Vorgaben – von Einzelstücken bis zur Serienproduktion.</p>
                     </article>
                     <article class="service-card" data-animate>
-                        <div class="service-icon-wrapper">
-                            <span class="service-icon" aria-hidden="true">🔧</span>
-                        </div>
-                        <h3>Engineering & Beratung</h3>
-                        <p>Expertenberatung für optimale Verpackungslösungen – von der ersten Konzeption bis zur finalen Umsetzung.</p>
-                        <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">🏋️</span></div>
+                        <h3>Schwergutverpackung</h3>
+                        <p>Sichere Verpackung für schwere und sperrige Güter bis zu 50 Tonnen Traglast.</p>
                     </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">⚙️</span></div>
+                        <h3>Maschinen- und Anlagenverpackung</h3>
+                        <p>Spezialverpackungen für sensible Maschinen und Anlagen – weltweit versandfertig.</p>
+                    </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">🛡️</span></div>
+                        <h3>Konservierung und Korrosionsschutz</h3>
+                        <p>VCI-Folien, Trockenmittel und Schutzbeschichtungen für langfristige Lagerung und Transport.</p>
+                    </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">🚢</span></div>
+                        <h3>Containerstau und -entladung</h3>
+                        <p>Professioneller Stau und sichere Entladung – maximale Ausnutzung des Container-Volumens.</p>
+                    </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">📦</span></div>
+                        <h3>Kommissionierung und Konfektionierung</h3>
+                        <p>Zusammenstellung und Verpackung Ihrer Ware nach Ihren spezifischen Anforderungen.</p>
+                    </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">🏭</span></div>
+                        <h3>Einlagerung und Auslagerung</h3>
+                        <p>Flexible Lagerlösungen mit schneller Verfügbarkeit – kurzfristig und langfristig.</p>
+                    </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">🚛</span></div>
+                        <h3>Versand und Logistik</h3>
+                        <p>Komplette Organisation des Transportwegs – von der Abholung bis zum Endkunden.</p>
+                    </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">🔄</span></div>
+                        <h3>Mehrwegverpackungen</h3>
+                        <p>Langlebige und reparierbare Packmittel für den wiederholten Einsatz im Kreislauf.</p>
+                    </article>
+                    <article class="service-card" data-animate>
+                        <div class="service-icon-wrapper"><span class="service-icon" aria-hidden="true">📊</span></div>
+                        <h3>Packmittel-Pool-Management</h3>
+                        <p>Verwaltung und Steuerung Ihrer Mehrwegpackmittel – Bestandsoptimierung inklusive.</p>
+                    </article>
+                </div>
+                <div class="section-cta" data-animate>
+                    <a href="leistungen.html" class="btn btn-primary">Alle Leistungen im Detail</a>
                 </div>
             </div>
         </section>
@@ -224,15 +266,25 @@
                     <h2 id="produkte-heading" class="section-title">Unsere Produkte</h2>
                     <p class="section-desc">Hochwertige Verpackungslösungen für jeden Bedarf – robust, nachhaltig und individuell anpassbar.</p>
                 </header>
-                <div class="products-grid">
+                <div class="products-grid products-grid-3">
                     <article class="product-card" data-animate>
-                        <div class="product-image">
-                            <div class="product-visual">
-                                <span class="product-emoji">🪵</span>
-                            </div>
-                        </div>
+                        <div class="product-image"><div class="product-visual"><span class="product-emoji" aria-hidden="true">📦</span></div></div>
                         <div class="product-content">
                             <span class="product-category">Holzverpackung</span>
+                            <h3>Kisten</h3>
+                            <p>Robuste Holzkisten in allen Maßen – geschlossen, offen, mit Deckel oder als Transportkiste. Für jeden Einsatzzweck maßgefertigt.</p>
+                            <ul class="product-features">
+                                <li>Individuelle Maße</li>
+                                <li>ISPM 15 / Export zertifiziert</li>
+                                <li>Stapelbar &amp; stabil</li>
+                            </ul>
+                            <a href="kontakt.html" class="btn btn-small">Anfragen</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-animate>
+                        <div class="product-image"><div class="product-visual"><span class="product-emoji" aria-hidden="true">🪵</span></div></div>
+                        <div class="product-content">
+                            <span class="product-category">Transport</span>
                             <h3>Paletten</h3>
                             <p>Palette ist nicht gleich Palette. Unsere Paletten sind optimal auf Ihre Bedürfnisse abgestimmt – in jedem Format und für jede Last.</p>
                             <ul class="product-features">
@@ -240,33 +292,25 @@
                                 <li>Belastbar bis 5.000 kg</li>
                                 <li>ISPM 15 zertifiziert</li>
                             </ul>
-                            <a href="#kontakt" class="btn btn-small">Anfragen</a>
+                            <a href="kontakt.html" class="btn btn-small">Anfragen</a>
                         </div>
                     </article>
                     <article class="product-card" data-animate>
-                        <div class="product-image">
-                            <div class="product-visual">
-                                <span class="product-emoji">📦</span>
-                            </div>
-                        </div>
+                        <div class="product-image"><div class="product-visual"><span class="product-emoji" aria-hidden="true">🧱</span></div></div>
                         <div class="product-content">
-                            <span class="product-category">Mehrwegverpackung</span>
-                            <h3>Kisten & Kipliboxen</h3>
-                            <p>Robuste und einteilige Holzverpackungen, die je nach Verwendung mehrere hundert Umläufe erzielen.</p>
+                            <span class="product-category">Spezialanfertigung</span>
+                            <h3>Sonderpaletten</h3>
+                            <p>Spezialpaletten für außergewöhnliche Abmessungen, Lasten oder Handling-Anforderungen – kundenspezifisch konstruiert.</p>
                             <ul class="product-features">
-                                <li>Mehrere hundert Umläufe</li>
-                                <li>Stapelbar & stabil</li>
-                                <li>Langlebig & reparierbar</li>
+                                <li>Beliebige Abmessungen</li>
+                                <li>Verstärkte Konstruktion</li>
+                                <li>Optimale Handling-Eigenschaften</li>
                             </ul>
-                            <a href="#kontakt" class="btn btn-small">Anfragen</a>
+                            <a href="kontakt.html" class="btn btn-small">Anfragen</a>
                         </div>
                     </article>
                     <article class="product-card" data-animate>
-                        <div class="product-image">
-                            <div class="product-visual">
-                                <span class="product-emoji">⚙️</span>
-                            </div>
-                        </div>
+                        <div class="product-image"><div class="product-visual"><span class="product-emoji" aria-hidden="true">🏋️</span></div></div>
                         <div class="product-content">
                             <span class="product-category">Sonderanfertigung</span>
                             <h3>Schwergutverpackungen</h3>
@@ -276,60 +320,48 @@
                                 <li>Schockabsorbierend</li>
                                 <li>Weltweiter Versand</li>
                             </ul>
-                            <a href="#kontakt" class="btn btn-small">Anfragen</a>
+                            <a href="kontakt.html" class="btn btn-small">Anfragen</a>
                         </div>
                     </article>
                     <article class="product-card" data-animate>
-                        <div class="product-image">
-                            <div class="product-visual">
-                                <span class="product-emoji">🧱</span>
-                            </div>
-                        </div>
+                        <div class="product-image"><div class="product-visual"><span class="product-emoji" aria-hidden="true">🔄</span></div></div>
                         <div class="product-content">
-                            <span class="product-category">Hybridverpackung</span>
-                            <h3>Kombinierte Systeme</h3>
-                            <p>Holz mit anderen Materialien kombiniert – für maximale Flexibilität und Schutz bei minimalem Gewicht.</p>
+                            <span class="product-category">Mehrweg</span>
+                            <h3>Mehrwegverpackungen</h3>
+                            <p>Langlebige Holzverpackungen, die je nach Verwendung mehrere hundert Umläufe erzielen – reparierbar und recyclingfähig.</p>
                             <ul class="product-features">
-                                <li>Holz + Metall + Kunststoff</li>
+                                <li>Mehrere hundert Umläufe</li>
+                                <li>Reparatur &amp; Wiederverwendung</li>
+                                <li>Pool-Management möglich</li>
+                            </ul>
+                            <a href="kontakt.html" class="btn btn-small">Anfragen</a>
+                        </div>
+                    </article>
+                    <article class="product-card" data-animate>
+                        <div class="product-image"><div class="product-visual"><span class="product-emoji" aria-hidden="true">🧩</span></div></div>
+                        <div class="product-content">
+                            <span class="product-category">Hybrid</span>
+                            <h3>Kombiverpackungen</h3>
+                            <p>Holz mit Kartonage, Kunststoff, Folie oder Metall kombiniert – für maximale Flexibilität und Schutz bei minimalem Gewicht.</p>
+                            <ul class="product-features">
+                                <li>Holz + Kartonage / Kunststoff / Folie / Metall</li>
                                 <li>Gewichtsoptimiert</li>
                                 <li>Kosteneffizient</li>
                             </ul>
-                            <a href="#kontakt" class="btn btn-small">Anfragen</a>
+                            <a href="kontakt.html" class="btn btn-small">Anfragen</a>
                         </div>
                     </article>
                 </div>
-            </div>
-        </section>
-
-        <!-- Quality Section -->
-        <section class="section section-green" aria-labelledby="qualitaet-heading">
-            <div class="container">
-                <div class="quality-grid">
-                    <div class="quality-content">
-                        <span class="section-tag light">Schulte-Qualität</span>
-                        <h2 id="qualitaet-heading" class="section-title light">Vernietete Nagelverbindungen mit „Köpfchen"</h2>
-                        <p class="light">Wir verarbeiten Nägel mit „Köpfchen" – unsere vernieteten Nagelverbindungen stehen für die bekannte „Schulte-Qualität". Diese traditionelle Handwerkskunst garantiert höchste Stabilität und Langlebigkeit.</p>
-                        <div class="quality-features">
-                            <div class="quality-item">
-                                <span class="quality-check">✓</span>
-                                <span> Höchste Stabilität</span>
-                            </div>
-                            <div class="quality-item">
-                                <span class="quality-check">✓</span>
-                                <span> Langlebig & robust</span>
-                            </div>
-                            <div class="quality-item">
-                                <span class="quality-check">✓</span>
-                                <span> Traditionelle Handwerkskunst</span>
-                            </div>
-                        </div>
+                <div class="products-extra" data-animate>
+                    <h3>Weitere Produkte</h3>
+                    <div class="products-extra-grid">
+                        <span class="extra-item"><span aria-hidden="true">📂</span> Faltsysteme</span>
+                        <span class="extra-item"><span aria-hidden="true">🔧</span> Einsätze und Packhilfsmittel</span>
+                        <span class="extra-item"><span aria-hidden="true">🌍</span> Holzpackmittel für Export</span>
                     </div>
-                    <div class="quality-visual">
-                        <div class="quality-card">
-                            <span class="quality-number">100+</span>
-                            <span class="quality-label">Jahre Erfahrung in der Verpackungsbranche</span>
-                        </div>
-                    </div>
+                </div>
+                <div class="section-cta" data-animate>
+                    <a href="produkte.html" class="btn btn-primary">Alle Produkte entdecken</a>
                 </div>
             </div>
         </section>
@@ -344,207 +376,320 @@
                 </header>
                 <div class="branches-grid">
                     <article class="branch-card" data-animate>
-                        <span class="branch-icon" aria-hidden="true">🏭</span>
-                        <h3>Rohrwerke</h3>
-                        <p>Sichere Verpackung für Rohre aller Dimensionen</p>
-                    </article>
-                    <article class="branch-card" data-animate>
-                        <span class="branch-icon" aria-hidden="true">⚙️</span>
-                        <h3>Walzwerke</h3>
-                        <p>Schutz für Walz- und Stahlprodukte</p>
-                    </article>
-                    <article class="branch-card" data-animate>
-                        <span class="branch-icon" aria-hidden="true">🔗</span>
-                        <h3>Drahtwerke</h3>
-                        <p>Spezialverpackungen für Drahtcoils</p>
-                    </article>
-                    <article class="branch-card" data-animate>
-                        <span class="branch-icon" aria-hidden="true">🧪</span>
-                        <h3>Chemische Industrie</h3>
-                        <p>Sichere Verpackung für Chemieprodukte</p>
-                    </article>
-                    <article class="branch-card" data-animate>
                         <span class="branch-icon" aria-hidden="true">🔩</span>
                         <h3>Maschinenbau</h3>
-                        <p>Präzise Verpackung für Maschinenteile</p>
+                        <p>Präzise Verpackung für Maschinenteile, Aggregate und komplette Anlagen</p>
                     </article>
                     <article class="branch-card" data-animate>
                         <span class="branch-icon" aria-hidden="true">🚗</span>
                         <h3>Automobilzulieferer</h3>
-                        <p>Just-in-Time Verpackungslösungen</p>
+                        <p>Just-in-Time Verpackungslösungen für die Automobilindustrie</p>
+                    </article>
+                    <article class="branch-card" data-animate>
+                        <span class="branch-icon" aria-hidden="true">🏭</span>
+                        <h3>Rohrwerke</h3>
+                        <p>Sichere Verpackung für Rohre aller Dimensionen und Materialien</p>
+                    </article>
+                    <article class="branch-card" data-animate>
+                        <span class="branch-icon" aria-hidden="true">⚙️</span>
+                        <h3>Walzwerke</h3>
+                        <p>Schutz für Walz- und Stahlprodukte bei Lagerung und Transport</p>
+                    </article>
+                    <article class="branch-card" data-animate>
+                        <span class="branch-icon" aria-hidden="true">🔗</span>
+                        <h3>Drahtwerke</h3>
+                        <p>Spezialverpackungen für Drahtcoils und -bundles</p>
+                    </article>
+                    <article class="branch-card" data-animate>
+                        <span class="branch-icon" aria-hidden="true">🧪</span>
+                        <h3>Chemische Industrie</h3>
+                        <p>Sichere Verpackung für Chemieprodukte mit besonderen Anforderungen</p>
                     </article>
                     <article class="branch-card" data-animate>
                         <span class="branch-icon" aria-hidden="true">⚡</span>
                         <h3>Elektroindustrie</h3>
-                        <p>ESD-sichere Verpackungskonzepte</p>
+                        <p>ESD-sichere Verpackungskonzepte für empfindliche Elektrobauteile</p>
                     </article>
                     <article class="branch-card" data-animate>
                         <span class="branch-icon" aria-hidden="true">📄</span>
                         <h3>Papierindustrie</h3>
-                        <p>Schonende Verpackung für Papierrollen</p>
+                        <p>Schonende Verpackung für Papierrollen und Pappprodukte</p>
                     </article>
                 </div>
+                <div class="section-cta" data-animate>
+                    <a href="branchen.html" class="btn btn-primary">Branchenlösungen im Detail</a>
+                </div>
             </div>
         </section>
 
-        <!-- Unternehmen -->
-        <section class="section section-white" id="unternehmen" aria-labelledby="unternehmen-heading">
+        <!-- Prozess -->
+        <section class="section section-white" id="prozess" aria-labelledby="prozess-heading">
             <div class="container">
-                <div class="about-grid">
-                    <div class="about-content">
-                        <span class="section-tag">Unternehmen</span>
-                        <h2 id="unternehmen-heading" class="section-title">100 Jahre Schulte Verpackungs-Systeme</h2>
-                        <p>Seit 1924 stehen wir für Qualität, Innovation und Nachhaltigkeit in der Verpackungsindustrie. Unser Management-System bauen wir sowohl zielorientiert als auch mitarbeiterorientiert auf.</p>
-                        <p>Unsere vernieteten Nagelverbindungen stehen für die bekannte „Schulte-Qualität" – verarbeitet mit Nägeln, die „Köpfchen" haben.</p>
-                        <div class="about-features">
-                            <div class="about-feature">
-                                <span class="feature-icon">✓</span>
-                                <div>
-                                    <strong>Über 100 Jahre Tradition</strong>
-                                    <span>Seit 1924 Ihr zuverlässiger Partner</span>
-                                </div>
-                            </div>
-                            <div class="about-feature">
-                                <span class="feature-icon">✓</span>
-                                <div>
-                                    <strong>CO₂-neutral produziert</strong>
-                                    <span>Umweltfreundlich und nachhaltig</span>
-                                </div>
-                            </div>
-                            <div class="about-feature">
-                                <span class="feature-icon">✓</span>
-                                <div>
-                                    <strong>Bekannte Schulte-Qualität</strong>
-                                    <span>Vernietete Nagelverbindungen</span>
-                                </div>
-                            </div>
-                            <div class="about-feature">
-                                <span class="feature-icon">✓</span>
-                                <div>
-                                    <strong>Mitarbeiterorientiertes Management</strong>
-                                    <span>Ziele und Menschen im Blick</span>
-                                </div>
-                            </div>
+                <header class="section-header">
+                    <span class="section-tag">Unser Prozess</span>
+                    <h2 id="prozess-heading" class="section-title">Von der Idee bis zur Auslieferung</h2>
+                    <p class="section-desc">Ein bewährter Ablauf, der Qualität, Termintreue und Ihre Zufriedenheit garantiert.</p>
+                </header>
+                <div class="process-grid">
+                    <div class="process-step" data-animate>
+                        <div class="process-number">01</div>
+                        <div class="process-icon" aria-hidden="true">🔍</div>
+                        <h3>Analyse des Packguts</h3>
+                        <p>Wir ermitteln Gewicht, Abmessungen, Empfindlichkeit und Transportanforderungen Ihres Gutes.</p>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-number">02</div>
+                        <div class="process-icon" aria-hidden="true">📐</div>
+                        <h3>Beratung &amp; Konzeption</h3>
+                        <p>Technische Beratung und Entwicklung eines maßgeschneiderten Verpackungskonzepts.</p>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-number">03</div>
+                        <div class="process-icon" aria-hidden="true">💻</div>
+                        <h3>CAD-gestützte Konstruktion</h3>
+                        <p>Detaillierte Konstruktion und Dokumentation mit modernster CAD-Software.</p>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-number">04</div>
+                        <div class="process-icon" aria-hidden="true">🔨</div>
+                        <h3>Fertigung</h3>
+                        <p>Präzise Fertigung in unserem Werk mit modernsten Maschinen und erfahrenen Fachkräften.</p>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-number">05</div>
+                        <div class="process-icon" aria-hidden="true">🛡️</div>
+                        <h3>Verpackung &amp; Konservierung</h3>
+                        <p>Professionelles Verpacken Ihres Gutes inklusive Korrosionsschutz und Schutzmaßnahmen.</p>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-number">06</div>
+                        <div class="process-icon" aria-hidden="true">🏭</div>
+                        <h3>Lagerung / Kommissionierung</h3>
+                        <p>Flexible Einlagerung oder Zusammenstellung mehrerer Positionen nach Ihren Vorgaben.</p>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-number">07</div>
+                        <div class="process-icon" aria-hidden="true">🚢</div>
+                        <h3>Versand / Containerstau</h3>
+                        <p>Organisation des Transportwegs oder professioneller Stau in Seecontainern.</p>
+                    </div>
+                    <div class="process-step" data-animate>
+                        <div class="process-number">08</div>
+                        <div class="process-icon" aria-hidden="true">♻️</div>
+                        <h3>Rücknahme, Reparatur oder Recycling</h3>
+                        <p>Nachhaltige Kreislaufwirtschaft – Mehrweg, Reparatur oder umweltgerechte Entsorgung.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualität -->
+        <section class="section section-green" aria-labelledby="qualitaet-heading">
+            <div class="container">
+                <div class="quality-grid">
+                    <div class="quality-content">
+                        <span class="section-tag light">Qualitätsmanagement</span>
+                        <h2 id="qualitaet-heading" class="section-title light">Qualität, die überzeugt</h2>
+                        <p class="light">Unser Qualitätsmanagement durchzieht den gesamten Prozess – von der ersten Anfrage bis zur Auslieferung. Jeder Arbeitsschritt wird dokumentiert, geprüft und kontinuierlich optimiert.</p>
+                        <div class="quality-features">
+                            <div class="quality-item"><span class="quality-check">✓</span><span> Wareneingangsprüfung</span></div>
+                            <div class="quality-item"><span class="quality-check">✓</span><span> Zwischen- und Endprüfung</span></div>
+                            <div class="quality-item"><span class="quality-check">✓</span><span> Verladekontrolle</span></div>
+                            <div class="quality-item"><span class="quality-check">✓</span><span> CAD-Dokumentation</span></div>
+                            <div class="quality-item"><span class="quality-check">✓</span><span> Checklisten und Fotodokumentation</span></div>
+                            <div class="quality-item"><span class="quality-check">✓</span><span> Kontinuierliche Optimierung</span></div>
+                        </div>
+                        <div class="quality-cta" style="margin-top:32px;">
+                            <a href="qualitaet-export.html" class="btn btn-primary">Mehr zur Qualität &amp; Export</a>
                         </div>
                     </div>
-                    <div class="about-visual">
-                        <div class="about-timeline">
-                            <div class="timeline-item">
-                                <span class="timeline-year">1924</span>
-                                <span class="timeline-text">Gründung</span>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-year">2024</span>
-                                <span class="timeline-text">100-jähriges Jubiläum</span>
-                            </div>
-                            <div class="timeline-item highlight">
-                                <span class="timeline-year">Heute</span>
-                                <span class="timeline-text">CO₂-neutral & innovativ</span>
-                            </div>
+                    <div class="quality-visual">
+                        <div class="quality-card">
+                            <span class="quality-number">100%</span>
+                            <span class="quality-label">Termintreue &amp; Kundenzufriedenheit stehen an erster Stelle</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Jobs -->
+        <!-- Export / IPPC -->
+        <section class="section section-light" aria-labelledby="export-heading">
+            <div class="container">
+                <div class="export-grid">
+                    <div class="export-visual" data-animate>
+                        <div class="export-card">
+                            <span class="export-badge">IPPC / ISPM 15</span>
+                            <h3>Weltweit versandfertig</h3>
+                            <p>Internationale Holzverpackungen nach den strengsten Standards</p>
+                        </div>
+                    </div>
+                    <div class="export-content" data-animate>
+                        <span class="section-tag">Export</span>
+                        <h2 id="export-heading" class="section-title">Exportverpackungen &amp; IPPC-Kennzeichnung</h2>
+                        <p>Wir produzieren und behandeln Holzverpackungen nach IPPC/ISPM 15 – für den reibungslosen internationalen Warenverkehr. Ob Hitzebehandlung, Kennzeichnung oder Beratung zu Länderanforderungen: Wir kennen die Regeln und setzen sie präzise um.</p>
+                        <div class="export-features">
+                            <div class="export-item"><span class="export-icon">✓</span><span><strong>Hitzebehandlung</strong> nach ISPM 15</span></div>
+                            <div class="export-item"><span class="export-icon">✓</span><span><strong>IPPC-Kennzeichnung</strong> mit HT- und DB-Marken</span></div>
+                            <div class="export-item"><span class="export-icon">✓</span><span><strong>Exportanforderungen</strong> für über 180 Länder</span></div>
+                            <div class="export-item"><span class="export-icon">✓</span><span><strong>Stauholz</strong> für Container und LKW</span></div>
+                            <div class="export-item"><span class="export-icon">✓</span><span><strong>Mehrfachnutzung</strong> bei korrekter Kennzeichnung</span></div>
+                            <div class="export-item"><span class="export-icon">✓</span><span><strong>Beratung</strong> zu Länderanforderungen</span></div>
+                        </div>
+                        <div class="export-cta" style="margin-top:24px;">
+                            <a href="qualitaet-export.html" class="btn btn-primary">Mehr zum Export</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nachhaltigkeit -->
+        <section class="section section-white" aria-labelledby="nachhaltigkeit-heading">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-tag">Umwelt &amp; Zukunft</span>
+                    <h2 id="nachhaltigkeit-heading" class="section-title">Nachhaltigkeit ist unsere Verpflichtung</h2>
+                    <p class="section-desc">Holz ist ein nachwachsender Rohstoff. Wir nutzen ihn verantwortungsvoll – von der ressourcenschonenden Konstruktion bis zum Recycling.</p>
+                </header>
+                <div class="sustainability-grid">
+                    <article class="sustain-card" data-animate>
+                        <div class="sustain-icon" aria-hidden="true">🌲</div>
+                        <h3>Nachwachsender Rohstoff</h3>
+                        <p>Holz ist ein natürlicher, erneuerbarer Rohstoff. Wir beziehen unsere Materialien aus nachhaltig bewirtschafteten Wäldern.</p>
+                    </article>
+                    <article class="sustain-card" data-animate>
+                        <div class="sustain-icon" aria-hidden="true">🔧</div>
+                        <h3>Reparatur &amp; Wiederverwendung</h3>
+                        <p>Defekte Packmittel reparieren wir fachgerecht, statt sie zu ersetzen. So verlängern wir die Lebensdauer erheblich.</p>
+                    </article>
+                    <article class="sustain-card" data-animate>
+                        <div class="sustain-icon" aria-hidden="true">♻️</div>
+                        <h3>Recycling &amp; Kreislaufwirtschaft</h3>
+                        <p>Nicht mehr reparierbare Packmittel werden umweltgerecht recycelt – als Hackschnitzel, Spanplattenrohstoff oder Energieträger.</p>
+                    </article>
+                    <article class="sustain-card" data-animate>
+                        <div class="sustain-icon" aria-hidden="true">🔄</div>
+                        <h3>Mehrwegverpackungen</h3>
+                        <p>Unsere Mehrwegpackmittel erzielen hunderte Umläufe und reduzieren den Verpackungsaufwand nachhaltig.</p>
+                    </article>
+                    <article class="sustain-card" data-animate>
+                        <div class="sustain-icon" aria-hidden="true">📉</div>
+                        <h3>CO₂-Bewusstsein</h3>
+                        <p>Holz bindet CO₂ während seines Wachstums. Durch kurze Transportwege und effiziente Prozesse minimieren wir Emissionen.</p>
+                    </article>
+                    <article class="sustain-card" data-animate>
+                        <div class="sustain-icon" aria-hidden="true">📐</div>
+                        <h3>Ressourcenschonende Konstruktion</h3>
+                        <p>Wir optimieren jedes Packmittel auf das Minimum an Material – ohne Kompromisse bei Stabilität und Schutz.</p>
+                    </article>
+                </div>
+                <div class="section-cta" data-animate>
+                    <a href="nachhaltigkeit.html" class="btn btn-primary">Mehr zur Nachhaltigkeit</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Karriere Teaser -->
         <section class="section section-light" aria-label="Stellenangebote">
             <div class="container">
                 <div class="job-banner">
                     <div class="job-content">
                         <div class="job-badge">Wir stellen ein</div>
                         <h3>Wir suchen Macher, die aus unserem Holz geschnitzt sind!</h3>
-                        <p>Werden Sie Teil unseres Teams und gestalten Sie die Zukunft der Verpackungsindustrie mit. Wir bieten attraktive Arbeitsbedingungen in einem zukunftssicheren Unternehmen.</p>
+                        <p>Werden Sie Teil unseres Teams. Sicherer Arbeitsplatz, gute Einarbeitung, leistungsgerechte Bezahlung, Jobrad, Weiterbildung und mehr.</p>
+                        <div class="job-benefits-inline">
+                            <span>✓ Sicherer Arbeitsplatz</span>
+                            <span>✓ Leistungsgerechte Bezahlung</span>
+                            <span>✓ Jobrad &amp; Tankkarte</span>
+                            <span>✓ Weiterbildung</span>
+                        </div>
                     </div>
-                    <a href="#kontakt" class="btn btn-primary">Jetzt bewerben</a>
+                    <div class="job-actions">
+                        <a href="karriere.html" class="btn btn-primary">Zu den Stellenangeboten</a>
+                        <a href="karriere.html#bewerbung" class="btn btn-outline" style="border-color:white;color:white;margin-top:12px;">Initiativ bewerben</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Kontakt -->
+        <!-- Kontakt Teaser -->
         <section class="section section-white" id="kontakt" aria-labelledby="kontakt-heading">
             <div class="container">
                 <header class="section-header">
                     <span class="section-tag">Kontakt</span>
                     <h2 id="kontakt-heading" class="section-title">Sprechen Sie uns an</h2>
-                    <p class="section-desc">Haben Sie Fragen zu unseren Produkten oder benötigen Sie ein individuelles Angebot? Wir beraten Sie gerne.</p>
+                    <p class="section-desc">Sie haben ein Packgut, eine Maschine oder ein Exportprojekt? Wir beraten Sie persönlich und unverbindlich.</p>
                 </header>
-                <div class="contact-grid">
+                <div class="contact-grid contact-teaser">
                     <div class="contact-info-wrapper">
                         <div class="contact-card">
                             <h3>Schulte Verpackungs-Systeme GmbH</h3>
                             <div class="contact-details">
                                 <div class="contact-item">
-                                    <span class="contact-icon">📍</span>
-                                    <div>
-                                        <strong>Adresse</strong>
-                                        <span>Musterstraße 123<br>58675 Hemer</span>
-                                    </div>
+                                    <span class="contact-icon" aria-hidden="true">📍</span>
+                                    <div><strong>Adresse</strong><span>Musterstraße 123<br>58675 Hemer</span></div>
                                 </div>
                                 <div class="contact-item">
-                                    <span class="contact-icon">📞</span>
-                                    <div>
-                                        <strong>Telefon</strong>
-                                        <a href="tel:+492372949417">02372 / 94 94 17</a>
-                                    </div>
+                                    <span class="contact-icon" aria-hidden="true">📞</span>
+                                    <div><strong>Telefon</strong><a href="tel:+492372949417">02372 / 94 94 17</a></div>
                                 </div>
                                 <div class="contact-item">
-                                    <span class="contact-icon">✉️</span>
-                                    <div>
-                                        <strong>E-Mail</strong>
-                                        <a href="mailto:info@packmittel-profis.de">info@packmittel-profis.de</a>
-                                    </div>
+                                    <span class="contact-icon" aria-hidden="true">✉️</span>
+                                    <div><strong>E-Mail</strong><a href="mailto:info@packmittel-profis.de">info@packmittel-profis.de</a></div>
                                 </div>
                                 <div class="contact-item">
-                                    <span class="contact-icon">🌐</span>
-                                    <div>
-                                        <strong>Web</strong>
-                                        <a href="https://www.packmittel-profis.de">www.packmittel-profis.de</a>
-                                    </div>
+                                    <span class="contact-icon" aria-hidden="true">🕐</span>
+                                    <div><strong>Öffnungszeiten</strong><span>Mo–Fr: 07:30 – 16:30 Uhr</span></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <form class="contact-form" id="contactForm" novalidate>
+                    <form class="contact-form" id="contactFormTeaser" novalidate>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="Ihr Name" aria-required="true">
+                                <label for="ct-name">Name *</label>
+                                <input type="text" id="ct-name" name="name" required placeholder="Ihr Name" aria-required="true">
                             </div>
                             <div class="form-group">
-                                <label for="email">E-Mail *</label>
-                                <input type="email" id="email" name="email" required placeholder="ihre@email.de" aria-required="true">
+                                <label for="ct-email">E-Mail *</label>
+                                <input type="email" id="ct-email" name="email" required placeholder="ihre@email.de" aria-required="true">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="company">Unternehmen</label>
-                            <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
+                            <label for="ct-company">Firma</label>
+                            <input type="text" id="ct-company" name="company" placeholder="Ihr Unternehmen">
                         </div>
                         <div class="form-group">
-                            <label for="betreff">Betreff *</label>
-                            <select id="betreff" name="betreff" required aria-required="true">
+                            <label for="ct-betreff">Anliegen *</label>
+                            <select id="ct-betreff" name="betreff" required aria-required="true">
                                 <option value="">Bitte wählen...</option>
                                 <option value="paletten">Paletten</option>
-                                <option value="kisten">Kisten & Kipliboxen</option>
+                                <option value="kisten">Kisten</option>
                                 <option value="schwergut">Schwergutverpackungen</option>
                                 <option value="kombiniert">Kombinierte Systeme</option>
+                                <option value="export">Export / IPPC</option>
+                                <option value="logistik">Logistik &amp; Containerstau</option>
                                 <option value="beratung">Beratung</option>
                                 <option value="karriere">Karriere</option>
                                 <option value="sonstiges">Sonstiges</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="nachricht">Nachricht *</label>
-                            <textarea id="nachricht" name="nachricht" rows="5" required placeholder="Ihre Nachricht..." aria-required="true"></textarea>
+                            <label for="ct-nachricht">Nachricht *</label>
+                            <textarea id="ct-nachricht" name="nachricht" rows="4" required placeholder="Ihre Nachricht..." aria-required="true"></textarea>
                         </div>
                         <div class="form-privacy">
                             <label class="checkbox-label">
                                 <input type="checkbox" required aria-required="true">
-                                <span>Ich habe die <a href="#datenschutz">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *</span>
+                                <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *</span>
                             </label>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">Nachricht senden</button>
                     </form>
+                </div>
+                <div class="section-cta" data-animate style="margin-top:40px;">
+                    <a href="kontakt.html" class="btn btn-primary">Vollständiges Kontaktformular &amp; Ansprechpartner</a>
                 </div>
             </div>
         </section>
@@ -560,29 +705,32 @@
                         <span class="logo-line1">Die Packmittel-Profis.</span>
                         <span class="logo-line2">Schulte Verpackungs-Systeme GmbH</span>
                     </div>
-                    <p>Ihr Spezialist für maßgeschneiderte Verpackungslösungen seit 1924. Paletten, Kisten, Schwergutverpackungen und mehr.</p>
+                    <p>Ihr Spezialist für maßgeschneiderte Verpackungslösungen seit 1924. Kisten, Paletten, Schwergutverpackungen und mehr.</p>
                     <div class="footer-badges">
-                        <span class="footer-badge">🌿 CO₂-neutral</span>
+                        <span class="footer-badge">🌿 Nachhaltig</span>
                         <span class="footer-badge">🏆 100+ Jahre</span>
+                        <span class="footer-badge">🌍 Exportfähig</span>
                     </div>
                 </div>
                 <nav class="footer-links" aria-label="Footer Navigation">
                     <h4>Navigation</h4>
                     <ul>
-                        <li><a href="#start">Startseite</a></li>
-                        <li><a href="#leistungen">Leistungen</a></li>
-                        <li><a href="#produkte">Produkte</a></li>
-                        <li><a href="#branchen">Branchen</a></li>
-                        <li><a href="#unternehmen">Unternehmen</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="produkte.html">Produkte</a></li>
+                        <li><a href="branchen.html">Branchen</a></li>
+                        <li><a href="qualitaet-export.html">Qualität &amp; Export</a></li>
+                        <li><a href="nachhaltigkeit.html">Nachhaltigkeit</a></li>
+                        <li><a href="karriere.html">Karriere</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </nav>
                 <nav class="footer-links" aria-label="Rechtliches">
                     <h4>Rechtliches</h4>
                     <ul>
-                        <li><a href="#impressum">Impressum</a></li>
-                        <li><a href="#datenschutz">Datenschutz</a></li>
-                        <li><a href="#agb">AGB</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="agb.html">AGB</a></li>
                     </ul>
                 </nav>
             </div>

@@ -1,7 +1,7 @@
 /* ============================================
    Schulte Verpackungs-Systeme GmbH
    Die Packmittel-Profis
-   Professionelles Stylesheet
+   Professionelles Stylesheet - Multi-Page v3
    ============================================ */
 
 :root {
@@ -76,6 +76,43 @@ ul { list-style: none; }
 }
 
 .skip-link:focus { top: 0; }
+
+/* ============================================
+   Cookie Banner
+   ============================================ */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-light);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    z-index: 9999;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.cookie-banner.show { transform: translateY(0); }
+
+.cookie-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.cookie-text p:first-child { margin-bottom: 4px; color: var(--text); }
+.cookie-text p:last-child { font-size: 14px; color: var(--text-muted); max-width: 600px; }
+
+.cookie-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
 
 /* ============================================
    Top Bar
@@ -189,12 +226,13 @@ ul { list-style: none; }
 }
 
 .nav-link {
-    padding: 10px 16px;
-    font-size: 14px;
+    padding: 10px 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--text-light);
     border-radius: var(--radius-sm);
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -269,7 +307,7 @@ ul { list-style: none; }
     align-items: center;
 }
 
-.hero-content { max-width: 600px; }
+.hero-content { max-width: 640px; }
 
 .hero-badge {
     display: inline-flex;
@@ -289,9 +327,9 @@ ul { list-style: none; }
 .badge-icon { font-size: 16px; }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.15;
     color: white;
     letter-spacing: -1px;
     margin-bottom: 20px;
@@ -313,7 +351,7 @@ ul { list-style: none; }
 
 .hero-buttons {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
@@ -323,16 +361,17 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 14px 28px;
+    padding: 14px 24px;
     font-family: var(--font);
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     text-transform: uppercase;
     border-radius: var(--radius-sm);
     border: none;
     cursor: pointer;
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -358,8 +397,8 @@ ul { list-style: none; }
 }
 
 .btn-small {
-    padding: 10px 20px;
-    font-size: 13px;
+    padding: 10px 18px;
+    font-size: 12px;
 }
 
 .btn-full { width: 100%; }
@@ -436,7 +475,40 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   Stats
+   Trust Section
+   ============================================ */
+.trust-section {
+    background: var(--bg-light);
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding: 12px 8px;
+}
+
+.trust-icon { font-size: 28px; }
+
+.trust-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+/* ============================================
+   Stats (beibehalten für andere Seiten)
    ============================================ */
 .stats-section {
     background: var(--bg-light);
@@ -494,7 +566,7 @@ ul { list-style: none; }
 
 .section-header {
     text-align: center;
-    max-width: 640px;
+    max-width: 700px;
     margin: 0 auto 60px;
 }
 
@@ -534,6 +606,11 @@ ul { list-style: none; }
 
 .section-desc.light { color: rgba(255,255,255,0.85); }
 
+.section-cta {
+    text-align: center;
+    margin-top: 48px;
+}
+
 /* ============================================
    Services
    ============================================ */
@@ -543,9 +620,13 @@ ul { list-style: none; }
     gap: 24px;
 }
 
+.services-grid-12 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .service-card {
     background: var(--bg-light);
-    padding: 40px 24px;
+    padding: 32px 20px;
     border-radius: var(--radius);
     text-align: center;
     border: 1px solid var(--border);
@@ -553,7 +634,7 @@ ul { list-style: none; }
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
     box-shadow: var(--shadow-lg);
     border-color: var(--primary-light);
 }
@@ -562,35 +643,36 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 72px;
-    height: 72px;
-    margin: 0 auto 20px;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 16px;
     background: linear-gradient(135deg, var(--primary-lighter), var(--accent-light));
     border-radius: 50%;
 }
 
-.service-icon { font-size: 32px; }
+.service-icon { font-size: 28px; }
 
 .service-card h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .service-card p {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--text-light);
     line-height: 1.6;
-    margin-bottom: 16px;
 }
 
 .service-link {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     color: var(--primary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-top: 12px;
+    display: inline-block;
 }
 
 .service-link:hover { color: var(--primary-dark); }
@@ -602,6 +684,10 @@ ul { list-style: none; }
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+}
+
+.products-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .product-card {
@@ -620,7 +706,7 @@ ul { list-style: none; }
 }
 
 .product-image {
-    height: 200px;
+    height: 180px;
     background: linear-gradient(135deg, var(--primary-light), var(--primary));
     display: flex;
     align-items: center;
@@ -629,10 +715,10 @@ ul { list-style: none; }
 
 .product-visual { text-align: center; }
 
-.product-emoji { font-size: 64px; }
+.product-emoji { font-size: 56px; }
 
 .product-content {
-    padding: 28px;
+    padding: 24px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -644,33 +730,33 @@ ul { list-style: none; }
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--primary);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .product-content h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: var(--text);
 }
 
 .product-content p {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--text-light);
     line-height: 1.6;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     flex: 1;
 }
 
 .product-features {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .product-features li {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-light);
-    padding: 4px 0;
+    padding: 3px 0;
     padding-left: 20px;
     position: relative;
 }
@@ -681,6 +767,101 @@ ul { list-style: none; }
     left: 0;
     color: var(--primary);
     font-weight: 700;
+}
+
+.products-extra {
+    margin-top: 40px;
+    text-align: center;
+    padding: 32px;
+    background: var(--bg);
+    border-radius: var(--radius);
+    border: 1px dashed var(--border);
+}
+
+.products-extra h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.products-extra-grid {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.extra-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-light);
+    padding: 8px 16px;
+    background: var(--bg-light);
+    border-radius: 100px;
+    border: 1px solid var(--border);
+}
+
+/* ============================================
+   Process
+   ============================================ */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+}
+
+.process-step {
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 32px 24px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    position: relative;
+}
+
+.process-step:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-light);
+}
+
+.process-number {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--primary);
+    background: var(--primary-lighter);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+}
+
+.process-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.process-step h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.process-step p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
 /* ============================================
@@ -703,14 +884,14 @@ ul { list-style: none; }
 .quality-features {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .quality-item {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     font-weight: 600;
 }
@@ -718,7 +899,7 @@ ul { list-style: none; }
 .quality-check {
     color: var(--accent);
     font-weight: 800;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .quality-visual {
@@ -737,7 +918,7 @@ ul { list-style: none; }
 
 .quality-number {
     display: block;
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 800;
     color: var(--accent);
     line-height: 1;
@@ -747,6 +928,129 @@ ul { list-style: none; }
 .quality-label {
     font-size: 16px;
     color: rgba(255,255,255,0.85);
+}
+
+/* ============================================
+   Export Section
+   ============================================ */
+.export-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.export-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.export-card {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    border-radius: var(--radius);
+    padding: 48px;
+    text-align: center;
+    color: white;
+    max-width: 380px;
+}
+
+.export-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--accent);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+}
+
+.export-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.export-card p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.export-content p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.export-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.export-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text);
+    padding: 10px 14px;
+    background: var(--bg-light);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--primary);
+}
+
+.export-icon {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   Sustainability
+   ============================================ */
+.sustainability-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.sustain-card {
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 36px 24px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.sustain-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-light);
+}
+
+.sustain-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.sustain-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.sustain-card p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
 /* ============================================
@@ -788,7 +1092,7 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   About
+   About (Unternehmen)
    ============================================ */
 .about-grid {
     display: grid;
@@ -911,6 +1215,21 @@ ul { list-style: none; }
 .job-content p {
     font-size: 15px;
     opacity: 0.9;
+    margin-bottom: 16px;
+}
+
+.job-benefits-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.job-actions {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
 /* ============================================
@@ -1058,6 +1377,278 @@ ul { list-style: none; }
 }
 
 /* ============================================
+   Ansprechpartner
+   ============================================ */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.team-card {
+    background: var(--bg-light);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.team-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-lighter), var(--accent-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 32px;
+}
+
+.team-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.team-role {
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.team-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.team-contact a {
+    font-size: 14px;
+    color: var(--text-light);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.team-contact a:hover { color: var(--primary); }
+
+/* ============================================
+   Job Listings
+   ============================================ */
+.job-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.job-filter-btn {
+    padding: 10px 20px;
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1.5px solid var(--border);
+    background: var(--bg-light);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.job-filter-btn:hover,
+.job-filter-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.jobs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    transition: var(--transition);
+}
+
+.job-card:hover {
+    box-shadow: var(--shadow);
+    border-color: var(--primary-light);
+}
+
+.job-card.hidden { display: none; }
+
+.job-meta {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.job-tag {
+    padding: 4px 12px;
+    background: var(--primary-lighter);
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 100px;
+}
+
+.job-tag-outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
+.job-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.job-card > p {
+    font-size: 15px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.job-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.job-detail h4 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.job-detail ul {
+    list-style: none;
+}
+
+.job-detail ul li {
+    font-size: 14px;
+    color: var(--text-light);
+    padding: 3px 0;
+    padding-left: 16px;
+    position: relative;
+}
+
+.job-detail ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.job-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.job-benefit {
+    padding: 6px 14px;
+    background: var(--bg);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-light);
+    border: 1px solid var(--border);
+}
+
+.job-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.job-contact {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.job-contact strong { color: var(--text); }
+
+/* Benefits Grid (Karriere-Seite) */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    background: var(--bg-light);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.benefit-item span:first-child { font-size: 20px; }
+
+/* ============================================
+   Map Placeholder
+   ============================================ */
+.map-placeholder {
+    background: var(--bg);
+    border-radius: var(--radius);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.map-placeholder h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.map-placeholder p { font-size: 14px; }
+
+/* ============================================
    Footer
    ============================================ */
 .site-footer {
@@ -1087,6 +1678,7 @@ ul { list-style: none; }
     display: flex;
     gap: 12px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-badge {
@@ -1184,11 +1776,20 @@ ul { list-style: none; }
 @media (max-width: 1024px) {
     .hero .container { grid-template-columns: 1fr; gap: 40px; }
     .hero-visual { display: none; }
-    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .services-grid,
+    .services-grid-12 { grid-template-columns: repeat(2, 1fr); }
+    .products-grid-3 { grid-template-columns: repeat(2, 1fr); }
     .branches-grid { grid-template-columns: repeat(2, 1fr); }
     .quality-grid,
     .about-grid,
-    .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .contact-grid,
+    .export-grid { grid-template-columns: 1fr; gap: 48px; }
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
+    .sustainability-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+    .trust-grid { grid-template-columns: repeat(3, 1fr); }
+    .job-details { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -1199,9 +1800,9 @@ ul { list-style: none; }
     }
     .top-bar-left { flex-wrap: wrap; justify-content: center; }
     .top-bar-right { flex-wrap: wrap; justify-content: center; }
-    
+
     .nav-toggle { display: flex; }
-    
+
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -1215,26 +1816,39 @@ ul { list-style: none; }
         box-shadow: var(--shadow);
         display: none;
     }
-    
+
     .nav-menu.active { display: flex; }
     .nav-link { width: 100%; text-align: center; }
     .nav-cta { margin-left: 0; margin-top: 8px; }
-    
+
     .hero { min-height: 500px; padding: 60px 0; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .services-grid,
+    .services-grid-12,
     .products-grid,
-    .branches-grid { grid-template-columns: 1fr; }
+    .products-grid-3,
+    .branches-grid,
+    .process-grid,
+    .sustainability-grid,
+    .team-grid,
+    .benefits-grid,
+    .trust-grid { grid-template-columns: 1fr; }
     .job-banner { flex-direction: column; text-align: center; padding: 32px; }
+    .job-actions { width: 100%; }
+    .job-actions .btn { width: 100%; }
     .form-row { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .cookie-inner { flex-direction: column; text-align: center; }
+    .section { padding: 60px 0; }
+    .hero-title { font-size: 2.2rem; }
 }
 
 @media (max-width: 480px) {
     .hero-buttons { flex-direction: column; }
     .btn { width: 100%; }
     .section { padding: 48px 0; }
-    .hero-title { font-size: 2.2rem; }
+    .hero-title { font-size: 2rem; }
+    .products-extra-grid { flex-direction: column; align-items: center; }
 }
 
 /* Scrollbar */
