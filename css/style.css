@@ -213,29 +213,6 @@ ul { list-style: none; }
     padding: 4px 8px;
 }
 
-.logo-icon svg { display: block; }
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.logo-line1 {
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--primary);
-    letter-spacing: -0.5px;
-}
-
-.logo-line2 {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
 /* Navigation */
 .main-nav { display: flex; align-items: center; }
 
@@ -528,51 +505,6 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   Stats (beibehalten für andere Seiten)
-   ============================================ */
-.stats-section {
-    background: var(--bg-light);
-    padding: 48px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-}
-
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px;
-}
-
-.stat-icon { font-size: 32px; }
-
-.stat-content { display: flex; flex-direction: column; }
-
-.stat-number, .stat-text {
-    font-size: 32px;
-    font-weight: 800;
-    color: var(--primary);
-    line-height: 1;
-}
-
-.stat-suffix {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--primary);
-}
-
-.stat-label {
-    font-size: 14px;
-    color: var(--text-muted);
-    margin-top: 4px;
-}
-
-/* ============================================
    Sections General
    ============================================ */
 .section { padding: 80px 0; }
@@ -685,18 +617,6 @@ ul { list-style: none; }
     line-height: 1.6;
 }
 
-.service-link {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--primary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-top: 12px;
-    display: inline-block;
-}
-
-.service-link:hover { color: var(--primary-dark); }
-
 /* ============================================
    Products
    ============================================ */
@@ -731,6 +651,14 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .product-visual { text-align: center; }
@@ -1098,6 +1026,15 @@ ul { list-style: none; }
 }
 
 .branch-icon { font-size: 40px; margin-bottom: 12px; display: block; }
+.branch-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid rgba(255,255,255,0.3);
+}
 
 .branch-card h3 {
     font-size: 16px;
@@ -1165,39 +1102,6 @@ ul { list-style: none; }
     font-size: 14px;
     color: var(--text-muted);
 }
-
-/* Timeline */
-.about-timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.timeline-item {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 20px 24px;
-    background: var(--bg);
-    border-radius: var(--radius-sm);
-    border-left: 4px solid var(--border);
-}
-
-.timeline-item.highlight {
-    border-left-color: var(--accent);
-    background: var(--accent-light);
-}
-
-.timeline-year {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--primary);
-    min-width: 80px;
-}
-
-.timeline-item.highlight .timeline-year { color: var(--accent-hover); }
-
-.timeline-text { font-size: 15px; color: var(--text-light); font-weight: 600; }
 
 /* ============================================
    Job Banner
@@ -1684,9 +1588,6 @@ ul { list-style: none; }
     margin-bottom: 48px;
 }
 
-.footer-brand .logo-line1 { color: white; font-size: 20px; }
-.footer-brand .logo-line2 { color: rgba(255,255,255,0.6); }
-
 .footer-brand .footer-logo-img {
     margin-bottom: 8px;
 }
@@ -1846,7 +1747,6 @@ ul { list-style: none; }
     .nav-cta { margin-left: 0; margin-top: 8px; }
 
     .hero { min-height: 500px; padding: 60px 0; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .services-grid,
     .services-grid-12,
     .products-grid,

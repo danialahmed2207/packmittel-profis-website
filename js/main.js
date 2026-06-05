@@ -129,9 +129,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ============================
-    // Kontaktformulare (alle Formulare)
+    // Kontaktformulare (nur Simulation wenn kein Backend konfiguriert)
     // ============================
     document.querySelectorAll('form').forEach(form => {
+        const action = form.getAttribute('action');
+        // Wenn Formspree oder anderes Backend konfiguriert ist, nicht blockieren
+        if (action && action.includes('formspree.io') && !action.includes('DEINE_FORM_ID')) {
+            // Echte Submission – zeige nur Ladezustand
+            form.addEventListener('submit', function(e) {
+                const btn = this.querySelector('button[type="submit"]');
+                if (btn) {
+                    btn.dataset.originalText = btn.textContent;
+                    btn.textContent = 'WIRD GESENDET...';
+                    btn.disabled = true;
+                }
+            });
+            return;
+        }
+
+        // Simulation für nicht konfigurierte Formulare
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
